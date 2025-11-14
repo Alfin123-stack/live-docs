@@ -55,7 +55,7 @@ function Page() {
       </header>
 
       {/* Main Editor */}
-      <main className="px-14 py-6">
+      <main className="px-14  py-6">
         <div className="rounded-2xl bg-neutral-900/70 border border-neutral-800 shadow-xl backdrop-blur-md p-4 sm:p-6">
           <Editor />
         </div>

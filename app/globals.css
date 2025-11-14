@@ -2,6 +2,9 @@
 @import "@clerk/themes/shadcn.css";
 @import "tw-animate-css";
 
+@import "@liveblocks/react-ui/styles.css";
+@import "@liveblocks/react-lexical/styles.css";
+
 @import "../styles/dark-theme.css";
 
 @theme inline {
