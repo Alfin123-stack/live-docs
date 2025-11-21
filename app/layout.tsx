@@ -6,7 +6,8 @@ import { dark } from "@clerk/themes";
 import "./globals.css";
 
 import { ClerkProvider } from "@clerk/nextjs";
-import LiveBlockProvicer from "./_provider/LiveBlockProvicer";
+import LiveBlockProvider from "./_provider/LiveBlockProvider";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +37,9 @@ export default function RootLayout({
       <html lang="en">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <LiveBlockProvicer>{children}</LiveBlockProvicer>
+          <LiveBlockProvider>
+            {children} <Toaster richColors position="top-center" />
+          </LiveBlockProvider>
         </body>
       </html>
     </ClerkProvider>
